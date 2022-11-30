@@ -1,10 +1,10 @@
 
 if ('serviceWorker' in navigator) {
-    console.log('Si jala el SW');
-    navigator.serviceWorker.register('https://hardworld089.github.io/sw.js')
-        .then( resp => console.log('serviceWorkwr ya cargo', resp))
-        .catch(err => console.log('no hay SW',err));
+    console.log('Si carga el SW');
+    navigator.serviceWorker.register('https://fasragcorporation.github.io/sw.js')
+        .then( resp => console.log('serviceWorkwr Cargo', resp))
+        .catch(err => console.log('NO hay SW',err));
 }else{
-    console.log('No soprta pwa');
+    console.log('Este navegador no soporta la PWA');
 }
 

@@ -47,7 +47,7 @@ form  input , textarea {
 }
 
 .it-coment h3{
-    color: rgb(255, 230, 0);
+    color: rgb(133, 133, 133);
 }
 
 .it-coment p{
@@ -96,7 +96,7 @@ footer{
 
 .content{
     width: 100%;
-    background-image: url(../img/heroPrin.png);
+    background-image:"img/Carrucel1.jpeg";
     background-repeat: no-repeat;
     background-size: cover;
     backface-visibility: hidden;
@@ -224,8 +224,8 @@ footer{
         letter-spacing: 3px;
     }
     .menu.activado ul a:hover{
-        background-color: rgba(241, 43, 43, 0.637);
-        color: rgb(220, 20, 20);
+        background-color: rgba(129, 129, 129, 0.637);
+        color: rgb(211, 208, 208);
         text-decoration: overline;
         font-weight: 800;
         letter-spacing: 5px;
@@ -280,7 +280,7 @@ footer{
        width: 90%;
         text-align: center;
         margin: 20px;
-        box-shadow: 1px 1px 2px  rgb(177, 147, 146);
+        box-shadow: 1px 1px 2px  rgb(175, 174, 174);
         /* border: solid 1px red; */
         margin: 0px auto;
         padding: 10px;
@@ -298,7 +298,7 @@ footer{
     }
     .heroFinal{
         width: 100%;
-        background-image: url("https://img.itch.zone/aW1hZ2UvNDk5MTU5LzI1ODE4NzYuZ2lm/original/GvpAVn.gif");
+        background-image:"img/Carrucel1";
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 0ch;
@@ -433,7 +433,7 @@ footer{
     }
     .menu ul li a{
         text-decoration: none;
-        color: rgb(156, 0, 8);
+        color: rgb(141, 140, 140);
         letter-spacing: 2px;
         font-size: 20px;
     }
@@ -472,7 +472,7 @@ footer{
        
         text-align: center;
         margin: 10px;
-        box-shadow: 3px 3px 8px  rgb(109, 1, 19);
+        box-shadow: 3px 3px 8px  rgb(104, 103, 103);
         /* border: solid 1px red; */
     }
     .peson_item img{
@@ -501,7 +501,6 @@ footer{
     }
     .heroFinal{
         width: 100%;
-        background-image: url("https://img.itch.zone/aW1hZ2UvNDk5MTU5LzI1ODE4NzYuZ2lm/original/GvpAVn.gif");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 0ch;
