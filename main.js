@@ -1,4 +1,3 @@
-
 if ('serviceWorker' in navigator) {
     console.log('Si carga el SW');
     navigator.serviceWorker.register('https://fasragcorporation.github.io/sw.js')
@@ -7,4 +6,3 @@ if ('serviceWorker' in navigator) {
 }else{
     console.log('Este navegador no soporta la PWA');
 }
-

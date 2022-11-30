@@ -1,6 +1,6 @@
 //Asignar un nombre y version al cache
 
-const CACHE_NAME = 'v1_cache_baconKingdon';
+const CACHE_NAME = 'v1_cache_fasrag';
 //archivos a guardar
 var urlsToChache=[
     'https://fasragcorporation.github.io/',

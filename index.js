@@ -15,9 +15,9 @@ window.addEventListener('DOMContentLoaded', async()=>{
     html += `
         <div>
             <div class="it-coment">
-                <h3>${comet.nombre}</h3>
-                <i>--Correo: ${comet.email}<i>
-                <p>${comet.coment}</p>
+                <h3>${comet.nom}</h3>
+                <i>--Correo: ${comet.ema}<i>
+                <p>${comet.com}</p>
             </div>
             
         </div>
@@ -32,16 +32,12 @@ formComent.addEventListener('submit', (e) =>{
     e.preventDefault()
     console.log('enviado')
 
-    const nombre = formComent['nombre']
-    const email = formComent['email']
-    const coment = formComent['coment']
+    const nom = formComent['nom']
+    const ema = formComent['ema']
+    const com = formComent['com']
 
     /* console.log(nombre.value,email.value, coment.value)  */
-    saveComment(nombre.value, email.value, coment.value); 
+    saveComment(nom.value, ema.value, com.value); 
     formComent.reset();
     
 })
-
-
-
-

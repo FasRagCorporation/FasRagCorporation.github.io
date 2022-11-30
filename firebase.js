@@ -1,28 +1,28 @@
-console.log('bro lo lograste  eres la verga');
-
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs, onSnapshot} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js"
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCYQJ_srpJoY1u7-nEOkO1yNzQIEhFaTNM",
-  authDomain: "baconkingdon.firebaseapp.com",
-  projectId: "baconkingdon",
-  storageBucket: "baconkingdon.appspot.com",
-  messagingSenderId: "550761256854",
-  appId: "1:550761256854:web:a025a6fe3373c30fc3efb7"
+  apiKey: "AIzaSyBHxn_4dsWbavPcL0bhbI-5H8bHV9S0nCw",
+  authDomain: "fasragcorporation.firebaseapp.com",
+  projectId: "fasragcorporation",
+  storageBucket: "fasragcorporation.appspot.com",
+  messagingSenderId: "165378532775",
+  appId: "1:165378532775:web:d20a808d16036c57174282",
+  measurementId: "G-D3579MF62J"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore()
+const analytics = getAnalytics(app);
 export const saveComment = (nombre, email, coment) => 
   addDoc(collection(db, 'comentarios'),{nombre,email,coment});
 
 export const getCommet = ()=> getDocs(collection(db, 'comentarios'));
+ 
 
-export const onGetSnapshot = (callback) => onSnapshot(collection(db,'comentarios'), callback)
-
+export const onGetSnapshot = (callback) => onSnapshot(collection(db,'comentarios'), callback) 
