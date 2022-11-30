@@ -6,7 +6,7 @@ var urlsToChache=[
     'https://fasragcorporation.github.io/',
     'https://fasragcorporation.github.io/index.html',
     'https://fasragcorporation.github.io/sw.js',
-    'hhttps://fasragcorporation.github.io/jquery.js',
+    'https://fasragcorporation.github.io/jquery.js',
     'https://fasragcorporation.github.io/manifest.json',
     'https://fasragcorporation.github.io/css/slider.css',
     'https://fasragcorporation.github.io/css/styles.css',
