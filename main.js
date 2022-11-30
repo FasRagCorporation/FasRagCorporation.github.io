@@ -1,23 +1,10 @@
-//Lanzamiento del SW en la app
-if('serviceWorker'in navigator){
-    console.log('Puedes usar el SW');
-    navigator.serviceWorker.register('./sw.js')
-                    .then(res=>console.log('Service Worker ok',res))
-                    .catch(err=>console.log('No hay Service Worker',err));
+
+if ('serviceWorker' in navigator) {
+    console.log('Si jala el SW');
+    navigator.serviceWorker.register('https://hardworld089.github.io/sw.js')
+        .then( resp => console.log('serviceWorkwr ya cargo', resp))
+        .catch(err => console.log('no hay SW',err));
 }else{
-    console.log('No puedes usar los Service Worket')
+    console.log('No soprta pwa');
 }
 
-
-//Scroll suavizado
-$(document).ready(function()
-{
-    $("#menu a").click(function()
-    {
-        $("html, body").animate(
-        {
-            scrollTop: $($(this).attr('href')).offset().top
-        });
-        return false;
-    });
-})

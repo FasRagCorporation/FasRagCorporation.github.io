@@ -1,29 +1,25 @@
-
 {
-    "name": "FasRag",
-    "short_name": "FasRag Corporation",
-    "scope":"https://idgs-92.000webhostapp.com/index.html",
-    "start_url": "https://idgs-92.000webhostapp.com/index.html",
+    "name": "FasRag Corporation",
+    "short_name": "FasRag",
+    "start_url": "https://hardworld089.github.io/index.html",
+    "description": "PWA Beacon_Kingdom",
+    "lang": "en-US",
+    "scope": "https://hardworld089.github.io/index.html",
     "display": "standalone",
-    "background_color": "#198754",
-    "orientation":"portrait",
-    "theme_color": "burlywood",
-    "description": "Compañia desarrolladora y creadora de videojuegos, aplicaciones moviles y sitios web's",
     "icons": [{
-      "src": "img/mapa.png",
-      "sizes": "512x512",
-      "type": "image/png"
+    "src": "img/Carrucel1.jpeg",
+    "sizes": "512x512",
+    "type": "image/png"
     }, {
-      "src": "img/mapa.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },{
-      "src": "img/128.png",
-      "sizes": "128x128",
-      "type": "image/mapa.png"
+    "src": "img/Carrucel1.jpeg",
+    "sizes": "256x256",
+    "type": "image/png"
+    }, {
+    "src": "img/Carrucel1.jpeg",
+    "sizes": "128x128",
+    "type": "image/png"
     }],
-    "related_applications": [{
-      "platform": "play",
-      "url": "https://play.google.com/store"
-    }]
-  }
+    "background_color": "#0598ED",
+    "theme_color": "#0598ED",
+    "orientation": "portrait"
+}
