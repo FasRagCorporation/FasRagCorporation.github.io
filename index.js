@@ -1,43 +1,40 @@
-import{saveComment, getCommet, onGetSnapshot} from './firebase.js';
+import {saveTasks, getTasks, onGetTask} from "./firebase.js";
 
-const formComent = document.getElementById('task-form');
-const commentContainer = document.getElementById('list-coment');
+const taskForm = document.getElementById('task-form');
+const taskContainer = document.getElementById('tasks-container');
 
-
-
-
-window.addEventListener('DOMContentLoaded', async()=>{
+window.addEventListener('DOMContentLoaded', async() => {
     
-    onGetSnapshot((querySnapshot) => {
-        let html=''
-   querySnapshot.forEach(element => {
-    const comet = element.data()
-    html += `
-        <div>
-            <div class="it-coment">
-                <h3>${comet.nom}</h3>
-                <i>--Correo: ${comet.ema}<i>
-                <p>${comet.com}</p>
-            </div>
+    onGetTask((querySnapshot) => {
+        let html = "";
+
+        querySnapshot.forEach(doc => {
+            const task = doc.data();
+            html += `
+                <div>
+                    <h3>${task.correo}</h3>
+                    <p>${task.comentario}</p>
+                </div>
+            `;
             
-        </div>
-    `;
-    });
-        commentContainer.innerHTML = html
+            
+                
+        });
+    
+        taskContainer.innerHTML = html
     });
 });
 
 
-formComent.addEventListener('submit', (e) =>{
+
+taskForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    console.log('enviado')
 
-    const nom = formComent['nom']
-    const ema = formComent['ema']
-    const com = formComent['com']
+    
+    const correo = taskForm['task-email'];
+    const comentario = taskForm['task-comentario'];
 
-    /* console.log(nombre.value,email.value, coment.value)  */
-    saveComment(nom.value, ema.value, com.value); 
-    formComent.reset();
+
+    saveTasks(correo.value, comentario.value);
     
 })
